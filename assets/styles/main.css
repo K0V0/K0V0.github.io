@@ -1,0 +1,177 @@
+
+/* GENERAL PROPS */
+
+h1 {
+    font-family: oswald;
+    margin: 0; /* browser reset */
+    font-size: 4em;
+}
+
+.planet {
+    width: 7.2rem;
+    height: 7.2rem;
+    line-height: 7.2rem;
+    text-align: center;
+    border-radius: 3.6rem; /* Not great, not terrible */
+}
+
+body > main {
+    padding: 1em 1em;
+}
+
+body > main > article {
+    margin: 1rem 15%; /* resp */
+    margin-bottom: 3.6rem;
+}
+
+body > main > article > table {
+    margin:2em;
+    margin-left: 3.6rem; /* resp */
+}
+
+body > main > article > table tr {
+    font-size: 1.125em;
+}
+
+body > main > article > table tr td {
+    padding: 0.5em 0;
+}
+
+body > main > article > table tr td a {
+    color: #eee;
+    font-weight: bold;
+    transition: color 0.25s ease-in-out;
+}
+
+
+
+/* slogan */
+
+body > main > article.slogan {
+    font-size: 1.375em;
+    line-height: 1.25em;
+}
+
+body > main > article.slogan > p {
+    display: inline-block;
+}
+
+
+
+/* cv */
+
+body > main > article.cv > h1 {
+    background-color:#63D9FF;
+}
+
+body > main > article.cv > table tr td {
+    vertical-align: top;
+    padding: 0.5em 0;
+    padding-right: 1.5em;
+}
+
+
+
+/* references */
+
+body > main > article.references > h1 {
+    background-color: #00c05f;
+}
+
+body > main > article.references > table tr td a:hover {
+    color: #00c05f;
+}
+
+
+
+/* projects */
+
+body > main > article.projects > h1 {
+    background-color: #c0000e;
+}
+
+body > main > article.projects > table tr td a:hover {
+    color: #c0000e;
+}
+
+
+
+/* motto */
+
+body > main > article.motto {
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #222;
+    margin-top: 7.2rem;
+    padding: 1em;   /* resp */
+    padding-right: 8.2rem; /* resp */
+}
+
+body > main > article.motto > span {
+    background-color: #FF6D00;
+    position: absolute;
+    top:-3.6rem;
+    right:1rem;
+    font-size: 6em;
+    line-height: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-image: -webkit-image-set(url("../images/quotes.png") 1x,
+                                        url("../images/quotes_2x.png") 2x,
+                                        url("../images/quotes_3x.png") 3x);*/
+    /* caniuse ranks only 92% support */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    body > main > article.motto > span {
+        background-image: url("../images/quotes_3x.png");
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    body > main > article.motto > span {
+        background-image: url("../images/quotes_2x.png");
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) {
+    body > main > article.motto > span {
+        background-image: url("../images/quotes.png");
+    }
+}
+
+/*
+CHROMIUM 88 linux downloading all hiDPI assets, even unused, investigate this issue
+CHROME 87 linux OK
+FIREFOX 83 linux OK
+*/
+
+
+
+/* RESPONSIVE OVERRIDES */
+
+@media only screen and (max-width: 640px) {
+
+    body > main > article {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    body > main > article > table {
+        margin:1rem 0;
+    }
+
+    body > main > article.cv > table tr td {
+        padding-right: 0.5em;
+    }
+
+    body > main > article.motto {
+        padding: 0.5em;
+        padding-top: 3.6rem;
+    }
+}
+
+
+
+

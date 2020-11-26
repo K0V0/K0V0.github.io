@@ -1,0 +1,68 @@
+
+body > header {
+    min-height: 320px;
+    line-height: 320px;
+    background-image: url("../images/space.png");
+    /* seamless image */
+    /* ASK MENTOR 1 */
+    /* NOTE - path be relative to location of css file (images is sibling folder) */
+    /* determine how path can be referenced according to root of project (no absolute fs path) */
+    text-align: center;
+    width: 100%;
+}
+
+body > main {
+    /* shadow over cosmonaut */
+    position: relative; /* dostat tien nad obrazok */
+    box-shadow: 0px -4px 4px 4px #000;
+}
+
+body > header > figure {
+    box-sizing: border-box;
+    max-width: 100%;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 0 16px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+body > header > figure > picture {
+    flex: 0 0 320px;
+    align-self: flex-end;
+    max-width: 100%;
+}
+
+body > header > figure > picture > img {
+    display: block;
+    /* ASK MENTOR 2 */
+    /* block level element inside inline type container, if it is good practice, possible replacement */
+    /* must be because of gap under image inside container */
+    max-width: 100%;
+}
+
+body > header > figure > div {
+    flex: 1 0 224px;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-align: left;
+    background-color: #222;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+}
+
+body > header > figure > div > strong {
+    font-size: 1.25em;
+}
+
+body > header > figure > div > span {
+    font-size: 0.75em;
+    display: block;
+    text-align: right;
+    padding-right: 0.25em;
+}
+
+
+

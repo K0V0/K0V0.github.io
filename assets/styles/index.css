@@ -1,0 +1,21 @@
+@font-face {
+    font-family: oswald;
+    src: url('../fonts/oswald.ttf');
+}
+
+.radius {
+    border-radius: 0.25rem;
+}
+
+body {
+    margin:0; /* browser style override */
+    background-color: #000;
+    min-width: 320px; /* minimum pre smartfony */
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+p {
+    margin: 0.5em 0;
+}
